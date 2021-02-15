@@ -1,15 +1,18 @@
-//************************************************************
+//*************************************************************
 //  Author: Steven Smail
 //
 //  Array.java
 //
 //  This program creates an array of user-defined strings
 //  and lists them individually in forwards and reverse order.
-//************************************************************
+//*************************************************************
 
 import java.util.Scanner;
 
-public class Array{    public static void main (String[] args)    {
+public class Array
+{
+    public static void main (String[] args)
+    {
         Scanner scanner = new Scanner(System.in);
 
         //String Number Prompt
@@ -23,19 +26,31 @@ public class Array{    public static void main (String[] args)    {
         String[] words = new String[limit];
 
         //Enter String Loop
-        for (int index = 0; index < words.length; index++)        {            System.out.print("Enter string #" +
-                              (index + 1) + ": ");            words[index] = scanner.nextLine();
+        for (int index = 0; index < words.length; index++)
+        {
+            System.out.print("Enter string #" +
+                              (index + 1) + ": ");
+            words[index] = scanner.nextLine();
         }
 
         System.out.println();
 
         //Array List Statement & Loop
         System.out.println("The array contains:");
-        for (int index = 0; index < words.length; index++)        {             System.out.println(words[index]);        }
+        for (int index = 0; index < words.length; index++)
+        {
+             System.out.println(words[index]);
+        }
 
         System.out.println();
 
-        //Reverse Array List Statement & Loop        System.out.println ("The array in reverse order:");        for (int index = words.length-1; index >= 0; index--)        {             System.out.println(words[index]);        }
-        System.out.println();
+        //Reverse Array List Statement & Loop
+        System.out.println ("The array in reverse order:");
+        for (int index = words.length-1; index >= 0; index--)
+        {
+             System.out.println(words[index]);
+        }
+
+        System.out.println();
     }
 }
