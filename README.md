@@ -1,2 +1,3 @@
 # Array
-Project 8 from my Programming Concepts class during the Spring 2016 semester.
+
+This program creates an array of user-defined strings and lists them individually in forwards and reverse order.
